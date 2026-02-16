@@ -1,0 +1,5 @@
+theme: jekyll-theme-midnight
+title: Blueprint's Title # The title will be displayed on the website's header.
+description: Blueprint's Description # The description will be displayed on the website's header.
+encoding: utf-8
+markdown: kramdown

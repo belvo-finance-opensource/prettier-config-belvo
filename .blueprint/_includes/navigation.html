@@ -1,0 +1,15 @@
+{% assign pageUrl = page.url | replace: ".html" , "" %}
+
+<nav class="navigation">
+    <ul class="navigation__list">
+        {% for entry in site.data.navigation %}
+            {% if entry.url == pageUrl %}
+                {% assign navigationCurrent = ' class="navigation__current"' %}
+            {% else %}
+                {% assign navigationCurrent = null %}
+            {% endif %}
+
+            <li><a{{ navigationCurrent }} href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

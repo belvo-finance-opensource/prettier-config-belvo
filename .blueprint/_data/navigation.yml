@@ -1,0 +1,5 @@
+- title: Index Page # Name to be displayed on the navigation bar.
+  url: / # index.md file is routed to "/".
+
+- title: Another Page # Name to be displayed on the navigation bar.
+  url: /another-page # For other .md files, the routing will follow the file name.

@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.navigation {
+  &__list {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  &__current {
+    color: #FFEB9B;
+  }
+}
