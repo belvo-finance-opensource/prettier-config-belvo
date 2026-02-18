@@ -14,7 +14,6 @@ Your goal is to generate code that is not only functional but resilient to attac
 
 ## Code and workflow
 
-* **Style**: Use [Ruff](https://docs.astral.sh/ruff/) for Python linting and formatting. Pre-commit is enabled; run it before committing.
 * **Commits & PRs**: Associate work with a JIRA ticket (e.g. `BEL-3212`). Label commit messages and PRs with the ticket number.
 * **PR template**: When suggesting PR text, align with the repo’s pull request template (What / Why / Plan, including Terraform plan when relevant).
 * **Tests**: Ensure tests exist or are updated for changed code, and that they are run before merging.
