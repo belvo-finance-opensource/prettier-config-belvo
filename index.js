@@ -1,10 +1,10 @@
 export default {
-    $schema: 'https://json.schemastore.org/prettierrc',
-    semi: false,
-    singleQuote: true,
-    printWidth: 100,
-    tabWidth: 2,
-    plugins: ['prettier-plugin-tailwindcss'],
-    bracketSpacing: true,
-    trailingComma: 'none'
+  $schema: 'https://json.schemastore.org/prettierrc',
+  semi: false,
+  singleQuote: true,
+  printWidth: 100,
+  tabWidth: 2,
+  plugins: ['prettier-plugin-tailwindcss'],
+  bracketSpacing: true,
+  trailingComma: 'none'
 }

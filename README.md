@@ -26,22 +26,22 @@ Shareable Prettier config for Belvo FE projects.
 
    ```js
    // prettier.config.js
-   import belvoConfig from "@belvo/prettier-config-belvo";
-   export default belvoConfig;
+   import belvoConfig from '@belvo/prettier-config-belvo'
+   export default belvoConfig
    ```
 
    Or extend and override options:
 
    ```js
    // prettier.config.js
-   import belvoPrettierConfig from "@belvo/prettier-config-belvo";
+   import belvoPrettierConfig from '@belvo/prettier-config-belvo'
 
    const config = {
-     ...belvoPrettierConfig,
+     ...belvoPrettierConfig
      // add or override options here
-   };
+   }
 
-   export default config;
+   export default config
    ```
 
    Or in `package.json`:
@@ -64,6 +64,7 @@ You can extend or override these options in your own config as needed.
 ## Updating
 
 - To see current peers required:
+
   ```sh
   npm info "@belvo/prettier-config-belvo@latest" peerDependencies
   ```

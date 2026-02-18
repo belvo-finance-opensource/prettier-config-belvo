@@ -1,11 +1,11 @@
-import belvoPrettierConfig from './index.js';
+import belvoPrettierConfig from './index.js'
 
 /**
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
 const config = {
-    ...belvoPrettierConfig,
-};
+  ...belvoPrettierConfig
+}
 
-export default config;
+export default config
