@@ -1,41 +1,83 @@
-<pre align="center">
-< REPO NAME >
-</pre>
+# @belvo/prettier-config-belvo
 
-<p align="center">
-    <a href="https://github.com/astral-sh/ruff"><img alt="Ruff" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" style="max-width:100%;"></a>
-    <a href="https://github.com/pre-commit/pre-commit"><img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&style=for-the-badge" alt="pre-commit" style="max-width:100%;"></a>
-</p>
+Shareable Prettier config for Belvo FE projects.
 
+---
 
-## Repository Description
-Provide a short description of the repo content and purpose
+## Installation
 
-## Requirements
-* Lorem ipsum...
+1. **Install required peer dependencies**
 
-## Getting started
-Lorem ipsum...
-```bash
-Lorem ipsum...
-```
+   Run this command to check which packages and versions you need:
 
-Lorem ipsum...
+   ```sh
+   npm info "@belvo/prettier-config-belvo@latest" peerDependencies
+   ```
 
+   The easiest way is:
 
-## Development
-> Lorem ipsum...:
+   ```sh
+   npx install-peerdeps --dev @belvo/prettier-config-belvo
+   ```
 
+2. **Configure Prettier**
 
-## Debugging
-Lorem ipsum...
+   Create a Prettier config file that extends this package:
 
+   ```js
+   // prettier.config.js
+   import belvoConfig from '@belvo/prettier-config-belvo'
+   export default belvoConfig
+   ```
 
-## Contributing
-Contributions, issues and feature requests are welcome.
+   Or extend and override options:
 
-If you wish to submit a pull request, please be sure check the items on this list:
-- [ ] Tests related to the changed code were executed
-- [ ] The source code has been coded following [the OWASP security best practices](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf).
-- [ ] Commit message properly labeled
-- [ ] There is a ticket associated to each PR.
+   ```js
+   // prettier.config.js
+   import belvoPrettierConfig from '@belvo/prettier-config-belvo'
+
+   const config = {
+     ...belvoPrettierConfig
+     // add or override options here
+   }
+
+   export default config
+   ```
+
+   Or in `package.json`:
+
+   ```json
+   {
+     "prettier": "@belvo/prettier-config-belvo"
+   }
+   ```
+
+---
+
+## Usage
+
+This configuration provides Belvo-standard Prettier formatting for frontend projects (single quotes, no semicolons, Tailwind CSS class sorting, and more).  
+You can extend or override these options in your own config as needed.
+
+---
+
+## Updating
+
+- To see current peers required:
+
+  ```sh
+  npm info "@belvo/prettier-config-belvo@latest" peerDependencies
+  ```
+
+- To interactively update your dependencies:
+  ```sh
+  npm run check-dependencies
+  ```
+
+---
+
+## Resources
+
+- [Prettier Configuration](https://prettier.io/docs/en/configuration.html)
+- [Prettier + ESLint](https://prettier.io/docs/en/integrating-with-linters.html)
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
