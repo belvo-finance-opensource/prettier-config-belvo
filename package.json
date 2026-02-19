@@ -1,6 +1,6 @@
 {
   "name": "@belvo/prettier-config-belvo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Belvo Prettier config for FE projects",
   "license": "MIT",
   "author": "Belvo Finance, S.L.",
